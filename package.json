@@ -1,0 +1,56 @@
+{
+  "name": "nuxt-vant",
+  "version": "1.0.0",
+  "description": "My well-made Nuxt.js project",
+  "author": "张平",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3001"
+    }
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "amfe-flexible": "^2.2.1",
+    "axios": "^0.19.0",
+    "fingerprintjs2": "^2.1.0",
+    "jquery": "^3.4.1",
+    "js-cookie": "^2.2.1",
+    "nuxt": "^2.0.0",
+    "postcss-plugin-px2rem": "^0.8.1",
+    "vant": "^2.5.1",
+    "vue-lazyload-cosmo-zp": "^1.0.1",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "autoprefixer": "^9.6.1",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-import": "^1.12.1",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "node-sass": "^4.13.1",
+    "prettier": "^1.18.2",
+    "sass-loader": "^8.0.2"
+  }
+}

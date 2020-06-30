@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+//-----------------------------------------------------
+// variables scss
+//-----------------------------------------------------
+
+// active state switch
+//-----------------------------------------------------
+$borderBoxSwitch: true !default;
+
+// font相关
+//-----------------------------------------------------
+$fontSize: 36px !default;
+$fontLineHeight: 1.5 !default;
+$fontFamily: system-ui, -apple-system, BlinkMacSystemFont, 'Microsoft YaHei UI', 'Microsoft YaHei', Roboto, 'Hiragino Sans GB', 'Source Han Sans CN', Fira Sans,
+  'Droid Sans', 'Helvetica Neue', arial, sans-serif !default;
+// 苹方, 冬青黑体，微软雅黑UI（win8.1+），微软雅黑，思源黑体（安卓）
+$fontCn: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei UI', 'Microsoft YaHei', 'Source Han Sans CN' sans-serif !default;
+// 前两个为safari chrome, ios4.0+, ios4.0-, Android 4.0+, Android 4.0-, windows&windows Phone,
+$fontEn: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Roboto, 'Droid Sans', 'Seogoe UI', Arial !default;
+
+// 背景色，文本色，边框色，链接色
+//-----------------------------------------------------
+$colorText: #333 !default;
+$colorBg: #fff !default;
+$colorBorder: #dbdbdb !default;
+$colorLink: #333 !default;
+$colorPlaceholder: #999 !default; // input placeholder color
+$colorDisabled: (
+  text: #999,
+  bg: #e3e3e3,
+  border: #dbdbdb,
+) !default; // textColor bgColor borderColor
+$colorOverlay: rgba(0, 0, 0, 0.7) !default; // 遮罩层颜色
+$colorBgF: #f7f8f9 !default;
+$colorLazy: #f1f1f1; // 加载颜色
+$colorT: #313138;
+$border: #979797;
+$colorBgB: #f4f4f4;
+
+// 基本颜色
+// color function : http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+// lighten($color, $amount)
+// darken($color, $amount)
+// opacity($color, $amount)
+// mix($color1, $color2[, $amount])
+//-----------------------------------------------------
+$color2: #222;
+$color3: #333;
+$color6: #666;
+$color9: #999;
+$colorC: #ccc;
+$colorB: #bbb;
+$colorF: #999;
+
+$blue: #b3d4fd !default;
+$orange: #fed989 !default;
+$pink: #fdbbbb !default;
+$red: #ff5353 !default;
+$green: #4cd964 !default;
+$primary: #007aff !default;
+$yellow: #dbb76c !default;
+
+$blueF: #f4f7fa;
+
+$bg: #5b2ac1;
+$btnColor: #5b2ac1;
+
+// 元素上下间距
+//-----------------------------------------------------
+$gap: 20px !default;
+
+// header,footer等的高度
+//-----------------------------------------------------
+$barHeight: 44px !default;
+
+// radius
+//-----------------------------------------------------
+$radiusBase: 5px !default;
+$radiusSmall: 3px !default;
+
+// timing-function
+//-----------------------------------------------------
+$timingFunction: cubic-bezier(0.42, 0, 0.58, 1);
+
+// active state switch
+//-----------------------------------------------------
+$activeStateSwitch: true !default;
+
+// z-index
+//-----------------------------------------------------
+$zIndexHeader: 1000 !default;
+$zIndexFooter: 2000 !default;
+$zIndexPopup: 3000 !default;
+$zIndexOverlay: 4000 !default; // 默认高于header和footer部分
+
+// 尺寸
+//-----------------------------------------------------
+$widthxs: 480px;
+$widthsm: 768px;
+$widthmd: 1025px;
+$widthlg: 1200px;
+
+// 公用字体大小响应式实例
+@mixin fontsize30() {
+  font-size: 30px;
+  @include xs() {
+    font-size: 20px;
+  }
+  @include sm() {
+    font-size: 24px;
+  }
+}

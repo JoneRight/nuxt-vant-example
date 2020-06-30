@@ -1,0 +1,49 @@
+@import './variables/core';
+@import './vant';
+
+[lazy='loading'] {
+  background-image: url(~@/assets/img/loading.gif) !important;
+  background-color: $colorLazy;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70% !important;
+}
+
+[lazy='error'] {
+  background-image: url(~@/assets/img/error.png) !important;
+  background-color: $colorLazy;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+// 按钮
+.myBtn {
+  display: inline-block;
+  color: $btnColor;
+  font-size: 50px;
+  background-color: #fff;
+  border: 1px solid $btnColor;
+  border-radius: 18px;
+  &:active {
+    color: #fff;
+    background-color: $btnColor;
+  }
+  &.myBtn--disabled {
+    color: #fff;
+    background-color: #bababa;
+    border-color: #bababa;
+  }
+}
+
+// 圆角白背景
+.myBox {
+  background: #fff;
+  border-radius: 25px;
+}
+
+// 虚线
+.dotted {
+  margin: 0 20px;
+  border-bottom: 1px dotted #d1c9e8;
+}
